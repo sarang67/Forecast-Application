@@ -1,0 +1,11 @@
+weather
+<a href="#/">Back To Search</a>
+<hr />
+<p>No of Days</p>
+<div><a href="#/forecast/2" ng-class="{'bg-primary': noRes==='2'}">2</a> | <a href="#/forecast/4" ng-class="{'bg-primary': noRes ==='4'}">4</a> | <a href="#/forecast/7" ng-class="{'bg-primary': noRes==='7'}">7</a></div>
+<hr />
+<h3 class="text-muted">Weather in {{cityName}}</h3>
+<div ng-repeat="w in weatherResult.list">
+  <wther-app-directive wether-detail="w" , conver-to-cal="convertKelvinToCelcius(kD)" , convert-to-date="convertDate(dD)" , date-form-text="MM/dd/yyyy @ h:mma"></<wther-app-directive>
+<br/><br/>
+</div>

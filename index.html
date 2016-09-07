@@ -1,0 +1,37 @@
+<!doctype html>
+<html ng-app ="wApp">
+<head>
+<meta charset="utf-8">
+<title>Angular JS weather forecast SPA</title>
+<link rel="stylesheet" href="bootstrap.css" />
+</head>
+<body>
+
+<style>
+.common-tab{ border: 1px solid silver;padding: 0 10px 3px 10px;overflow: hidden;color: green;}
+.common-tab a{text-decoration:none;}
+
+</style>
+<div id="container"><!--container start here--> 
+ <div class="common-tab">
+  <div style="float:left;"><h3><a href="#/">ForeCast Application</a></h3></div>
+  <div style="float:right;"><h3><a href="#/">Home</a></h3></div>
+ </div>
+ <div style="clear:both;"></div>
+ 
+ 
+ <div ng-view></div>
+ 
+</div>
+
+
+<script src="angular.js"></script> 
+<script src="angular-route.js"></script> 
+<script src="angular-resource.js"></script> 
+<script src="section8.js"></script>
+<script src="controller.js"></script>
+<script src="route.js"></script>
+<script src="services.js"></script>
+<script src="directive.js"></script
+</body>
+</html>

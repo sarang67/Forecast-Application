@@ -1,0 +1,21 @@
+<table border="1" class="table table-striped">
+<tr>
+   <td>Date</td>
+   <td>Day time Temprature</td>
+   <td>Day Night Temprature</td>
+   <td>Min Temprature</td>
+   <td>Max Temprature</td>
+   <td>Humidity</td>
+</tr>
+
+<tr>
+   <td>{{convertToDate({ dD:wetherDetail.dt}) | date : dateFormText}} </td>
+   <td>{{converToCal({kD:wetherDetail.temp.day})}} Centigrate</td>
+   <td>{{converToCal({kD:wetherDetail.temp.day})}} Centigrate</td>
+   <td>{{converToCal({kD:wetherDetail.temp.min})}}</td>
+   <td>{{converToCal({kD:wetherDetail.temp.max})}}</td>
+   <td>{{wetherDetail.humidity}}</td>
+</tr>
+
+
+</table>
